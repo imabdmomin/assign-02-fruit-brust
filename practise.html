@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+       tailwinds only 
+    </title>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  .lato-font{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
+    <!-- tailwinds and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font awesome link -->
+<script src="https://kit.fontawesome.com/d357ff09c5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="container mx-auto lato-font">
+<!-- header section -->
+<!-- navbar -->
+<div class="max-w-screen px-8 py-5 bg-[#F85559] text-white flex justify-between items-center">
+  <!-- menus horizontally -->
+  <div class=" hidden md:flex  lg:flex">
+    <ul class="flex gap-4">
+      <li><a>Home</a></li>
+      <li><a>About Us</a></li>
+      <li><a>Shop</a></li>
+      <li><a>All Fruits</a></li>
+      </ul>
+  </div>
+  <!-- img logo -->
+  <div class="flex  items-center gap-3">
+    <img src="./images/logo.png" alt="">
+  <span>Fruit Burst</span>
+  </div>
+
+
+<!-- dropdown -->
+<div class="dropdown flex md: flex-end">
+  <label tabindex="0" class="absolute left-12 bottom- btn btn-ghost md:hidden lg:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+  </label>
+  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-500 rounded-box w-52">
+    <li><a>Home</a></li>
+    <li><a>About Us</a></li>
+    <li><a>Shop</a></li>
+    <li><a>All Fruits</a></li>  
+    <input type="text"relative placeholder="Search here" class="relative input w-32  outline-none rounded-full h-6 md:w-auto" />
+    <span><i class="absolute left-28 bottom-3 text-black fa-solid fa-magnifying-glass"></i> </span>      
+  </ul>
+</div>
+
+<!-- search box  -->
+<div class=" ">
+  <div class="hidden md:flex lg:flex pt-5 relative">
+    <input type="text" placeholder="Search here" class="input relative w-100 rounded-full outline-none lg:w-100 lg:h-8 md:w-auto" />
+    <span><i class="absolute left-40 bottom-2 text-black fa-solid fa-magnifying-glass"></i> </span>
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
